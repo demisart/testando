@@ -139,6 +139,10 @@ ruby {
   .sidebar a {font-size: 18px;}
 }
 
+.lang0{ 
+	background: #88C4FF;
+}
+
 .lang1{ 
 	background: #63C085;
 }
@@ -154,3 +158,38 @@ ruby {
 .lang4{ 
 	background: #F6D87C;
 }
+
+.lang5{ 
+	background: #FEFF32;
+}
+
+.lang6{ 
+	background: #CFCE00;
+}
+
+.lang7{ 
+	background: #06B1B1;
+}
+
+.lang8{ 
+	background: #F08080;
+}
+
+.lang9{ 
+	background: #E99557;
+}
+
+.lang10{ 
+	background: #ED9B77;
+}
+
+.lang11{ 
+	background: #6FAA01;
+}
+
+.lang12{ 
+	background: #EB6A88;
+}
+
+
+
