@@ -1,11 +1,11 @@
 *{margin: 0;}
 @font-face {
-    font-family: mainFont;
-    src: url(Andika-Regular.ttf);
+    font-family: japanese;
+    src: url(meiryo.ttc);
 }
 
 body {
-    font-family: mainFont;
+    font-family: arial;
     background-color: bisque;
 }
 
@@ -137,6 +137,10 @@ ruby {
 @media screen and (max-height: 450px) {
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
+}
+
+.japan{
+	font-family: japanese;
 }
 
 .lang0{ 
