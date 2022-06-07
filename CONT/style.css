@@ -143,6 +143,10 @@ ruby {
 	font-family: japanese;
 }
 
+.lang00{ 
+	background: #FA9333;
+}
+
 .lang0{ 
 	background: #88C4FF;
 }
