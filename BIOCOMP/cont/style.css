@@ -1,12 +1,17 @@
 *{margin: 0;}
 @font-face {
     font-family: mainFont;
-    src: url(Andika-Regular.ttf);
+    src: url(meiryo.ttc);
 }
 
 body {
-    font-family: mainFont;
+    font-family: arial;
     background-color: bisque;
+}
+
+.jpFont{
+	font-family: mainFont;
+	font-size: 29px;
 }
 
 #topo {
