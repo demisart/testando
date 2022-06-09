@@ -56,6 +56,31 @@ li {
 }
 </style>
 
+<style>
+.collapsible {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 30px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+</style>
+
 </head>
 
 <body>
@@ -113,12 +138,29 @@ $(document).ready(function() {
 
 <!-- DFKyoKaSho-W4 -->
 
+<button type="button" class="collapsible">家</button>
+<span class="content">
+  <img src="https://psv4.vkuseraudio.net/s/v1/d/NkQ5bJbc_OPE7NeTvjF4zciByNCsQZN__dFjPay_fvzoGhcWOK32OohKF9bIabk0t5KpblMjaWXWVeQ9LAzTXR0vcXaAmSUyI2NrZyeYciudKeAp9r7aqA/kanji_casa.gif">
+</span>
+
 <p class="box1" id="col-navigation" style='border: 2px solid #A1BCD8; background: white;'> 
 
-<mark class="marcador">家</mark>に住む <br>
-いえにすむ <br>
-Live in a house <br>
-Morar em uma casa <br>
+休暇で帰省している <br>
+きゅうかできせいしている <br>
+Home for the holidays <br>
+Casa para os feriados <br>
+
+</p>
+</li>
+
+<li>
+
+<p class="box1" id="col-navigation" style='border: 2px solid #A1BCD8; background: white;'> 
+
+<mark class="marcador">家</mark>に帰らなければなりません。 <br>
+いえにかえらなければなりません。 <br>
+I have to go home. <br>
+Tenho que ir para casa. <br>
 
 </p>
 </li>
@@ -130,6 +172,17 @@ Morar em uma casa <br>
 いえでおあいしましょう。 <br>
 I'll see you home. <br>
 Te vejo em casa. <br>
+
+</p>
+</li>
+
+<li>
+<p class="box1" id="col-navigation" style='border: 2px solid #A1BCD8; background: white;'> 
+
+<mark class="marcador">家</mark>に住む <br>
+いえにすむ <br>
+Live in a house <br>
+Morar em uma casa <br>
 
 </p>
 </li>
@@ -152,6 +205,24 @@ Mudar-se de uma casa <br>
     <footer>
 
     </footer>
+	
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
 </body>
 
 </html>
