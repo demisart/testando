@@ -1,0 +1,209 @@
+*{margin: 0;}
+@font-face {
+    font-family: japanese;
+    src: url(meiryo.ttc);
+}
+
+body {
+    font-family: arial;
+    background-color: bisque;
+}
+
+#topo {
+    max-width: 100%;
+    /*background-image: url('https://trance-cell.com/wp-content/uploads/1-59-512x288.jpg');*/
+    background: rgb(250, 147, 51);
+    text-align: center;
+}
+
+nav {
+    color: black;
+    display: inline-block;
+    font-size: 25px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: grey;
+}
+
+.faixa{
+	background: white;
+}
+
+.button {
+    background-color: #F66026;
+	border:none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+	font-family: Sarabun;
+    margin: 4px 2px;
+    cursor: pointer;
+	
+	height: 70px;
+}
+
+.button0 {
+    background-color: #e7e7e7;
+    border:2px solid #F66026;
+    color: black;
+    padding: 30px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+	font-family: Sarabun;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+main{
+	margin:30px 40px;
+	font-size: 25px;
+	font-family: Sarabun;
+}
+
+ruby {
+  display: inline-flex;
+  flex-direction: column-reverse;
+}
+
+
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+.japan{
+	font-family: japanese;
+}
+
+.lang00{ 
+	background: #FA9333;
+}
+
+.lang0{ 
+	background: #88C4FF;
+}
+
+.lang1{ 
+	background: #63C085;
+}
+
+.lang2{ 
+	background: #FF3F3F;
+}
+
+.lang3{ 
+	background: #7C8EAB;
+}
+
+.lang4{ 
+	background: #F6D87C;
+}
+
+.lang5{ 
+	background: #FEFF32;
+}
+
+.lang6{ 
+	background: #CFCE00;
+}
+
+.lang7{ 
+	background: #06B1B1;
+}
+
+.lang8{ 
+	background: #F08080;
+}
+
+.lang9{ 
+	background: #E99557;
+}
+
+.lang10{ 
+	background: #ED9B77;
+}
+
+.lang11{ 
+	background: #6FAA01;
+}
+
+.lang12{ 
+	background: #EB6A88;
+}
+
+.lang13{ 
+	background: #C85284;
+}
+
+
+
+
+
