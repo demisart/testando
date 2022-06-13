@@ -53,6 +53,31 @@ li {
 }
 </style>
 
+<style>
+.collapsible {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 30px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+</style>
+
 <script>
 function openNav() {
   document.getElementById("mySidebar").style.width = "250px";
@@ -254,6 +279,16 @@ function closeNav() {
 	
 	<a href="../computational07en.html">Computational Skills</a> ➜ <strong>Web development</strong> <br><br>
 	
+
+<button type="button" class="collapsible">Web Developer Roadmap</button>
+<span class="content">
+  <img src="01intro.png" style="max-width:900px;width: auto;"><br>
+  <img src="02frontend.png" style="max-width:900px;width: auto;"><br>
+  <img src="03backend.png" style="max-width:900px;width: auto;"><br>
+  <img src="04devops.png" style="max-width:900px;width: auto;"><br>
+  <a href="https://www.freecodecamp.org/news/2019-web-developer-roadmap/"><i>Source link</i></a>
+</span>
+
 	• <a href="01front/front07en.html">Front-end</a> <br>
 	• <a href="02database/database07en.html">Database</a> <br>
 	• <a href="03back/back07en.html">Back-end​</a> <br>
@@ -265,6 +300,23 @@ function closeNav() {
     </main>
     
 	<footer>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
 
     </footer>
 </body>
